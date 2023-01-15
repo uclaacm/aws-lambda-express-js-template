@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/uclaacm/claudia-update#readme",
   "dependencies": {
+    "aws-serverless-express": "^3.4.0",
     "package.json": "^2.0.1"
   }
 }
