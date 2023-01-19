@@ -21,7 +21,7 @@ jobs:
           git pull
       - name: Check if function exists, if so update
         run: |
-          if function-exists --"./claudia.json"
+          if function-exists --"./claudia.json"; then
             exit 1
           fi
           if test -f "./claudia.json"; then
