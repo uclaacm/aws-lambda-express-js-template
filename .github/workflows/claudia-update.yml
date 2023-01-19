@@ -2,8 +2,6 @@ name: claudia-update
 run-name: ${{ github.actor }} is updating a Lambda function via Claudia!
 on:
   push:
-    branches:
-      - "main"
 jobs:
   update-claudia:
     runs-on: ubuntu-latest
