@@ -1,0 +1,11 @@
+{
+  "lambda": {
+    "role": "claudia-test-executor",
+    "name": "aws-lambda-express-js-template",
+    "region": "us-west-1",
+    "sharedRole": true
+  },
+  "api": {
+    "id": "obliuhcv4i"
+  }
+}
