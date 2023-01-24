@@ -24,6 +24,6 @@ jobs:
           if function-exists --"./claudia.py"; then
             exit 1
           fi
-          elif test -f "./claudia.json"; then
+          else test -f "./claudia.json"; then
             claudia update
           fi
