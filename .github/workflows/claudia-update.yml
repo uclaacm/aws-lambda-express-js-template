@@ -19,6 +19,10 @@ jobs:
           git config --local user.email ${{ secrets.AWS_SERVICE_EMAIL }}
           git config --local user.name ${{ secrets.AWS_SERVICE_USERNAME }}
           git pull
-      - name: Check if function exists, if so update
+      - name: If claudia.json doesn't exist, exit with code 1
         run: |
-          claudia update
+          if test -f "./claudia.json"; then
+            claudia update
+          else
+            exit 1
+          fi
