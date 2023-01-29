@@ -21,7 +21,7 @@ jobs:
           git pull
       - name: If claudia.json doesn't exist or lambda function not deployed, exit with code 1
         run: |
-          if test -f "./claudia.json" && aws lambda get-function --function-name aws-lambda-node-js-template; then
+          if test -f "./claudia.json" && aws lambda get-function --function-name aws-lambda-express-js-template; then
             claudia update
           else
             exit 1
