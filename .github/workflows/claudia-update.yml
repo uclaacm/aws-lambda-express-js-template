@@ -21,7 +21,7 @@ jobs:
           git pull
       - name: If claudia.json doesn't exist, exit with code 1
         run: |
-          if test -f "./testing.json"; then
+          if test -f "./claudia.json"; then
             claudia update
           else
             exit 1
